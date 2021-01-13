@@ -8,31 +8,31 @@ import Shop from "./components/shopingCart/Shop";
 import Payment from "./components/pay/Payment";
 import Success from "./components/pay/Success";
 import Go from "./components/Gocart";
-import PUBLICURL from "./contants";
+// import PUBLICURL from "./contants";
 Vue.use(VueRouter);
 const routes = [
   {
-    path: PUBLICURL,
+    path: "/",
     component: Home
   },
   {
-    path: PUBLICURL + "home",
+    path: "/home",
     component: Home
   },
   {
-    path: PUBLICURL + "cart",
+    path: "/cart",
     component: Cart
   },
   {
-    path: PUBLICURL + "order",
+    path: "/order",
     component: Order
   },
   {
-    path: PUBLICURL + "shop",
+    path: "/shop",
     component: Shop
   },
   {
-    path: PUBLICURL + "pay",
+    path: "/pay",
     component: Pay,
     children: [
       {
