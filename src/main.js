@@ -9,9 +9,11 @@ import "./assets/images/iconfont/iconfont";
 // require styles
 import "swiper/dist/css/swiper.css";
 import store from "./store";
+import PUBLICURL from "./contants";
 import mydistrict from "./package/myDistrict/myDistrict";
 import Identify from "./components/Identify";
 Vue.config.productionTip = false;
+Vue.prototype.$publicUrl = PUBLICURL;
 Vue.use(Identify);
 Vue.use(VueAwesomeSwiper);
 Vue.config.productionTip = false;

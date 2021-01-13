@@ -153,9 +153,9 @@ const store = new Vuex.Store({
     ]
   },
   mutations: {
-    login(state, LoginName) {
-         state.login=true,
-           state.loginName = LoginName
+    login(state, loginName){
+      state.login = true,
+        state.loginName = loginName
     },
     getcart(state, cart) {
       state.cart = cart;
